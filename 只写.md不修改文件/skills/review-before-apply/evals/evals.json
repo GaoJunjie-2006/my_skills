@@ -1,0 +1,23 @@
+{
+  "skill_name": "review-before-apply",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "帮我修复 app.py 里面的 bug：load_user_data 函数在文件不存在时会崩溃，加一个错误处理。如果文件不存在就返回空字典。",
+      "expected_output": "生成一个 .md 文件，包含对 load_user_data 函数的修改说明和代码对比",
+      "files": ["evals/files/app.py"]
+    },
+    {
+      "id": 2,
+      "prompt": "给这个 index.html 页面加一个返回顶部的按钮，页面内容较长时点击能回到顶部。",
+      "expected_output": "生成一个 .md 文件，包含对 index.html 的修改说明和代码对比",
+      "files": ["evals/files/index.html"]
+    },
+    {
+      "id": 3,
+      "prompt": "看看 app.py 里 calculate_stats 函数的代码，帮我优化一下，有冗余的地方。直接输出代码",
+      "expected_output": "直接输出修改后的代码，不生成 .md 文件",
+      "files": ["evals/files/app.py"]
+    }
+  ]
+}
